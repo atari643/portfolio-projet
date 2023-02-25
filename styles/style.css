@@ -5,10 +5,11 @@
     scroll-behavior: smooth;
 }
 body{
-    max-width: 1903px;
+    max-width: 1755px;
     width: 100%;
-    justify-content: center;
+    justify-content: space-around;
     display: flex;
+
 }
 .page{
     max-width: 936px;
@@ -22,6 +23,10 @@ header{
     display: flex;
     max-height: 424px;
     height: 100%;
+}
+header div{
+    margin-left: 46px;
+
 }
 .description{
     margin-left: 99px;
@@ -103,4 +108,29 @@ nav{
     max-height: 100%;
     max-width: 100%;
     border-radius: 10px;
+}
+.scrollBar{
+    position: static;
+    margin-right: 100px;
+    height: 100vh;
+    max-width: 331px;
+    width: 100%;
+    display: flex;
+    border-right: #dbdbdb 1px solid;
+    flex-direction: column;
+}
+#Menu{
+    margin-top: 100px;
+}
+
+.scrollBar div{
+    margin-bottom: 45px;
+    
+}
+.scrollBar button{
+    font-size: 16px;
+    color: #262626;
+    font-weight: 100;
+    width: 100%;
+    display: flex;
 }
