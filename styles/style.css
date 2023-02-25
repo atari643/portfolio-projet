@@ -70,12 +70,29 @@ nav{
     max-height: 293px;
     cursor: pointer;
 }
-.portFolio{
+.detail{
     max-width: 1334px;
     max-height: 887px;
+    width: 100%;
+    height: 100%;
     z-index: 1;
-    border: solid red;
-    position: absolute;
+    position: fixed;
+    visibility: hidden;
+    border: solid;
+    top: 24px;
+    left: 15%;
+}
+.portFolio{
+    position: fixed;
+    max-width: 100vw;
+    max-height: 100vh;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
 }
 .projet img:hover{
     filter: brightness(50%);

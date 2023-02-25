@@ -6,6 +6,8 @@ var buttonMDP = document.getElementById("MDP")
 var buttonBD = document.getElementById("BD")
 var allbutton = document.querySelectorAll("nav div")
 var projet = document.querySelector(".projet")
+var portFolio = document.querySelector(".portFolio")
+var detail = document.querySelector(".detail")
 function desactiver(){
     for(var i = 0; i < allbutton.length; i++){
         allbutton[i].classList.remove("active");
@@ -15,7 +17,12 @@ function desactiver(){
 buttonJava.addEventListener("click", desactiver)
 buttonJava.addEventListener("click", ()=>{
     buttonJava.classList.add("active")
-    projet.innerHTML = "<img src='./images/odomo.png' alt='odomo'><img src='./images/odomo.png' alt='odomo'><img src='./images/odomo.png' alt='odomo'>"
+    projet.innerHTML = "<img id='odomo' src='./images/odomo.png' alt='odomo'>"
+    var odomo = document.getElementById("odomo")
+    odomo.addEventListener("click", ()=>{
+        detail.style.visibility = "visible"
+        portFolio.style.visibility = "visible"
+    })
     
 })
 buttonC.addEventListener("click", desactiver)
