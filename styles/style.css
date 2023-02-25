@@ -30,6 +30,21 @@ header{
     margin-bottom: 76px;
 }
 nav{
+    position: absolute;
     display: flex;
+    max-width: 936px;
+    width: 100%;
     justify-content: space-around;
+    top: 211px;
+}
+button{
+    cursor: pointer;
+    border: none;
+    margin-top: 19px;
+    font-size: 100%;
+    color: #8e8e8e;
+}
+nav div{
+    border-top: solid #262626ff 2px;
+    
 }
