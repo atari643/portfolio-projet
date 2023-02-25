@@ -125,7 +125,39 @@ nav{
 
 .scrollBar div{
     margin-bottom: 45px;
+    display: flex;
     
+    
+}
+#Contact button{
+    background-color: #1b66c9;
+    height: 40px;
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 80px;
+    color: white;
+    text-align: center;
+}
+#Contact i{
+    margin-top: 10px;
+}
+hr{
+    width: 60px;
+    position: fixed;
+    margin-top: 30px;
+    visibility: hidden;
+    left: 0px;
+}
+.souligner{
+    transition: 0.2s;
+    transform: translate(200%);
+}
+#Contact button:hover{
+    background-color: white;
+    padding: 10px;
+    width: 80px;
+    color: black;
+    text-align: center;
 }
 .scrollBar button{
     font-size: 16px;
@@ -133,4 +165,5 @@ nav{
     font-weight: 100;
     width: 100%;
     display: flex;
+    margin-top: 0;
 }

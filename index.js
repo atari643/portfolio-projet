@@ -8,6 +8,10 @@ var allbutton = document.querySelectorAll("nav div")
 var projet = document.querySelector(".projet")
 var portFolio = document.querySelector(".portFolio")
 var detail = document.querySelector(".detail")
+var contact = document.getElementById("Contact")
+var ligne = document.querySelector("hr")
+
+
 function desactiver(){
     for(var i = 0; i < allbutton.length; i++){
         allbutton[i].classList.remove("active");
@@ -49,4 +53,15 @@ buttonBD.addEventListener("click", ()=>{
 buttonHCJ.addEventListener("click", desactiver)
 buttonHCJ.addEventListener("click", ()=>{
     buttonHCJ.classList.add("active")
+})
+contact.addEventListener("mouseover", ()=>{
+    ligne.style.visibility = "visible"
+    ligne.classList.add("souligner")
+    
+        
+})
+contact.addEventListener("mouseout", ()=>{
+    ligne.style.visibility = "hidden"
+    ligne.classList.remove("souligner")
+        
 })
