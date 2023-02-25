@@ -37,6 +37,7 @@ buttonJava.addEventListener("click", ()=>{
 })
 buttonC.addEventListener("click", desactiver)
 buttonC.addEventListener("click", ()=>{
+    buttonC.classList.add("active")
 })
 buttonPython.addEventListener("click", desactiver)
 buttonPython.addEventListener("click", ()=>{
@@ -53,6 +54,7 @@ buttonBD.addEventListener("click", ()=>{
 buttonHCJ.addEventListener("click", desactiver)
 buttonHCJ.addEventListener("click", ()=>{
     buttonHCJ.classList.add("active")
+    projet.innerHTML = "<img id='odomo' src='./images/odomo.png' alt='odomo'>"
 })
 contact.addEventListener("mouseover", ()=>{
     ligne.style.visibility = "visible"
