@@ -1,0 +1,6 @@
+var buttonJava = document.getElementById("java")
+var buttonC = document.getElementById("C#")
+var buttonPython = document.getElementById("Python")
+var buttonMDP = document.getElementById("MDP")
+var buttonBD = document.getElementById("BD")
+var allbutton = document.querySelectorAll("nav div")
