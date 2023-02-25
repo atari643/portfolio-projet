@@ -1,5 +1,5 @@
 var buttonJava = document.getElementById("java")
-var buttonC = document.getElementById("C#")
+var buttonC = document.getElementById("C")
 var buttonHCJ = document.getElementById("HCJ")
 var buttonPython = document.getElementById("Python")
 var buttonMDP = document.getElementById("MDP")
@@ -90,3 +90,6 @@ contact.addEventListener("mouseout", ()=>{
     ligne.classList.remove("souligner")
         
 })
+if (window.matchMedia('(prefers-color-scheme)').media !== 'not all') {
+    console.log('🎉 Dark mode is supported');
+  }
