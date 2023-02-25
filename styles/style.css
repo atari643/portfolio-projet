@@ -31,6 +31,8 @@ header div{
 .description{
     margin-left: 99px;
     width: 40%;
+    overflow: hidden;
+
 }
 #name{
     margin-bottom: 76px;
@@ -64,16 +66,17 @@ nav{
 }
 .projet{
     display: flex;
-    position: absolute;
+    position: relative;
     max-width: 936px;
     width: 100%;
     justify-content: space-between;
-    top: 43%;
+    flex-wrap: wrap;
 }
 .projet img{
     max-width: 294px;
     max-height: 293px;
     cursor: pointer;
+    margin-top: 20px;
 }
 .detail{
     max-width: 1334px;
@@ -110,7 +113,7 @@ nav{
     border-radius: 10px;
 }
 .scrollBar{
-    position: static;
+    position: relative;
     margin-right: 100px;
     height: 100vh;
     max-width: 331px;
@@ -120,14 +123,21 @@ nav{
     flex-direction: column;
 }
 #Menu{
-    margin-top: 100px;
+    margin-top: 116px;
 }
 
 .scrollBar div{
     margin-bottom: 45px;
     display: flex;
-    
-    
+    position: fixed;
+
+}
+
+#Mes-projets{
+    margin-top: 151px;
+}
+#Contact{
+    margin-top: 182px;
 }
 #Contact button{
     background-color: #1b66c9;
@@ -168,6 +178,41 @@ hr{
     margin-top: 0;
 }
 h1{
-    position: static;
-    margin-top: 100px;
+    position: fixed;
+    font-weight: 100;
+    font-size: 16pt;
+    top: 38px;
+    display: flex;
+    position: fixed;
+    font-style: normal ;
+}
+.infobutton{
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 51%;
+    display: flex;
+    transition: 0.1s;
+    transform: translateY(-100%);
+    flex-direction: column;
+    visibility: hidden;
+}
+.infovisible{
+    transform: translateY(5%);
+    transition: 0.1s;
+    visibility: visible;
+}
+.infobutton button{
+    padding:5px;
+}
+
+#buttonGit{
+    background-color: #131035;
+    border-radius: 100px;
+    color: #ffffff;
+}
+#buttonDownload{
+    background-color: green;
+    border-radius: 100px;
+    color: #ffffff;
 }

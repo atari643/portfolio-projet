@@ -10,6 +10,12 @@ var portFolio = document.querySelector(".portFolio")
 var detail = document.querySelector(".detail")
 var contact = document.getElementById("Contact")
 var ligne = document.querySelector("hr")
+var boutonGithub = document.getElementById("buttonGit")
+var lienGithub = document.querySelector(".Git")
+var infobutton = document.querySelector(".infobutton")
+
+
+
 
 
 function desactiver(){
@@ -23,16 +29,33 @@ portFolio.addEventListener("click", ()=>{
     portFolio.style.visibility = "hidden"
 })
 
+
 buttonJava.addEventListener("click", desactiver)
 buttonJava.addEventListener("click", ()=>{
     buttonJava.classList.add("active")
-    projet.innerHTML = "<img id='odomo' src='./images/odomo.png' alt='odomo'>"
-    var odomo = document.getElementById("odomo")
-    odomo.addEventListener("click", ()=>{
+    projet.innerHTML = "<img class='image' src='./images/odomo.png' alt='odomo'>"
+    var odomo = document.querySelectorAll(".image")
+    for(var i = 0; i < odomo.length; i++){
+
+    odomo[i].addEventListener("click", ()=>{
         detail.innerHTML = "<img src='./images/projet-odomo.png' alt='projet-odomo'>"
         detail.style.visibility = "visible"
         portFolio.style.visibility = "visible"
     })
+    odomo[i].addEventListener("mouseover", ()=>{
+        infobutton.classList.add("infovisible")
+    })
+    odomo[i].addEventListener("mouseout", ()=>{
+        infobutton.classList.remove("infovisible")
+    })
+}
+infobutton.addEventListener("mouseover", ()=>{
+    infobutton.classList.add("infovisible")
+})
+infobutton.addEventListener("mouseout", ()=>{
+    infobutton.classList.remove("infovisible")
+})
+    
     
 })
 buttonC.addEventListener("click", desactiver)
@@ -54,7 +77,7 @@ buttonBD.addEventListener("click", ()=>{
 buttonHCJ.addEventListener("click", desactiver)
 buttonHCJ.addEventListener("click", ()=>{
     buttonHCJ.classList.add("active")
-    projet.innerHTML = "<img id='odomo' src='./images/odomo.png' alt='odomo'>"
+    projet.innerHTML = "<img id='odomo' src='./images/odomo.png' alt='odomo'><img id='odomo' src='./images/odomo.png' alt='odomo'><img id='odomo' src='./images/odomo.png' alt='odomo'><img id='odomo' src='./images/odomo.png' alt='odomo'><img id='odomo' src='./images/odomo.png' alt='odomo'><img id='odomo' src='./images/odomo.png' alt='odomo'><img id='odomo' src='./images/odomo.png' alt='odomo'>"
 })
 contact.addEventListener("mouseover", ()=>{
     ligne.style.visibility = "visible"
