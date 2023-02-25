@@ -39,7 +39,7 @@ nav{
     max-width: 936px;
     width: 100%;
     justify-content: space-around;
-    top: 30%;
+    top: 31%;
 }
 button{
     cursor: pointer;
@@ -59,8 +59,26 @@ nav{
 }
 .projet{
     display: flex;
-    border: solid red 1px;
-    margin-top: 60px;
-    height: auto;
-    
+    position: absolute;
+    max-width: 936px;
+    width: 100%;
+    justify-content: space-between;
+    top: 43%;
+}
+.projet img{
+    max-width: 294px;
+    max-height: 293px;
+    cursor: pointer;
+}
+.portFolio{
+    max-width: 1334px;
+    max-height: 887px;
+    z-index: 1;
+    border: solid red;
+    position: absolute;
+}
+.projet img:hover{
+    filter: brightness(50%);
+    border: none;
+    transition: 0.1s;
 }
