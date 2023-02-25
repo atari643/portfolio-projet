@@ -19,6 +19,8 @@ body{
 
 header{
     display: flex;
+    max-height: 424px;
+    height: 100%;
 }
 .description{
     margin-left: 99px;
