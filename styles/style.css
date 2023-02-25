@@ -11,4 +11,9 @@ body{
 }
 .page{
     max-width: 936px;
+    margin-top: 43px;
+}
+.profile img{
+    border-radius: 100%;
+    
 }
