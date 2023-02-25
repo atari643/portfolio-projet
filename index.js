@@ -18,14 +18,14 @@ portFolio.addEventListener("click", ()=>{
     detail.style.visibility = "hidden"
     portFolio.style.visibility = "hidden"
 })
+
 buttonJava.addEventListener("click", desactiver)
 buttonJava.addEventListener("click", ()=>{
     buttonJava.classList.add("active")
     projet.innerHTML = "<img id='odomo' src='./images/odomo.png' alt='odomo'>"
     var odomo = document.getElementById("odomo")
     odomo.addEventListener("click", ()=>{
-        detail.innerHTML = "<img  src='./images/projet-odomo.png' alt='projet-odomo'>"
-
+        detail.innerHTML = "<img src='./images/projet-odomo.png' alt='projet-odomo'>"
         detail.style.visibility = "visible"
         portFolio.style.visibility = "visible"
     })
@@ -33,7 +33,6 @@ buttonJava.addEventListener("click", ()=>{
 })
 buttonC.addEventListener("click", desactiver)
 buttonC.addEventListener("click", ()=>{
-    buttonC.classList.add("active")
 })
 buttonPython.addEventListener("click", desactiver)
 buttonPython.addEventListener("click", ()=>{
