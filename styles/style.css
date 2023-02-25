@@ -44,10 +44,9 @@ button{
     font-size: 100%;
     color: #8e8e8e;
 }
-
+nav div{
+    cursor: pointer;
+}
 .active{
     border-top: solid #262626ff 2px;
-}
-.passive{
-    border: none;
 }
