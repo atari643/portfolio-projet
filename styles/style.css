@@ -57,3 +57,10 @@ nav{
 .active{
     border-top: solid #262626ff 2px;
 }
+.projet{
+    display: flex;
+    border: solid red 1px;
+    margin-top: 60px;
+    height: auto;
+    
+}
