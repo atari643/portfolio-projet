@@ -29,3 +29,7 @@ header{
 #name{
     margin-bottom: 76px;
 }
+nav{
+    display: flex;
+    justify-content: space-around;
+}
