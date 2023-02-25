@@ -78,7 +78,7 @@ nav{
     z-index: 1;
     position: fixed;
     visibility: hidden;
-    border: solid;
+    border-radius: 10px;
     top: 24px;
     left: 15%;
 }
