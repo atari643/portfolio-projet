@@ -80,13 +80,14 @@ nav{
     visibility: hidden;
     border-radius: 10px;
     top: 24px;
-    left: 15%;
 }
 .portFolio{
     position: fixed;
     max-width: 100vw;
     max-height: 100vh;
     visibility: hidden;
+    display: flex;
+    justify-content: center;
     background-color: rgba(0, 0, 0, 0.5);
     top: 0;
     left: 0;
@@ -98,4 +99,8 @@ nav{
     filter: brightness(50%);
     border: none;
     transition: 0.1s;
+}
+.detail img{
+    max-height: 100%;
+    max-width: 100%;
 }
