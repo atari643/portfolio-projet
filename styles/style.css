@@ -167,3 +167,7 @@ hr{
     display: flex;
     margin-top: 0;
 }
+h1{
+    position: static;
+    margin-top: 100px;
+}
