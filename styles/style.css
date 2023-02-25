@@ -15,5 +15,15 @@ body{
 }
 .profile img{
     border-radius: 100%;
-    
+}
+
+header{
+    display: flex;
+}
+.description{
+    margin-left: 99px;
+    width: 40%;
+}
+#name{
+    margin-bottom: 76px;
 }
