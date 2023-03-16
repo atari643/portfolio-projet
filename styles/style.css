@@ -160,6 +160,7 @@ nav{
     width: 80px;
     color: white;
     text-align: center;
+    transition: 0.2s;
     
 }
 #Contact i{

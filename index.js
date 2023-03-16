@@ -34,6 +34,7 @@ buttonJava.addEventListener("click", desactiver)
 buttonJava.addEventListener("click", ()=>{
     buttonJava.classList.add("active")
     projet.innerHTML = "<img class='image' src='./images/odomo.png' alt='odomo'>"
+    
     var odomo = document.querySelectorAll(".image")
     for(var i = 0; i < odomo.length; i++){
 
@@ -44,6 +45,7 @@ buttonJava.addEventListener("click", ()=>{
     })
     odomo[i].addEventListener("mouseover", ()=>{
         infobutton.classList.add("infovisible")
+        
     })
     odomo[i].addEventListener("mouseout", ()=>{
         infobutton.classList.remove("infovisible")
