@@ -3,257 +3,82 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    
 }
 body{
-    max-width: 1755px;
-    width: 100%;
-    justify-content: space-around;
+    background-color: black;
+    height: 100vh;
+    max-width: 100vw;
     display: flex;
-
+    justify-content: center;
+    
 }
 .page{
-    max-width: 936px;
-    margin-top: 43px;
-    margin-right: 95px;
+    max-width: 80%;
+    width: 100%;
+    
 }
-.profile img{
-    border-radius: 100%;
-}
-
 header{
     display: flex;
-    max-height: 424px;
-    height: 40%;
+    height: 200px;
+    justify-content: center;
+    margin-top: 100px;
+    justify-content: space-around;
 }
-header div{
-    margin-left: 71px;
-
-}
-.description{
-    margin-left: 30px;
+#Description{
     width: 40%;
-    overflow: hidden;
+    font-size: 20pt;
+    color: white;
 
 }
-
-#name{
-    margin-bottom: 76px;
-}
-h2{
-    font-weight: 400;
+#profil img{
+    border-radius: 100px;
 }
 nav{
-    position: absolute;
     display: flex;
-    max-width: 936px;
     width: 100%;
-    justify-content: space-around;
-    top: 31%;
-}
-button{
-    cursor: pointer;
-    border: none;
-    margin-top: 19px;
-    font-size: 100%;
+    height: 5%;
+    justify-content: center;
+    
     
 }
 nav button{
-    margin-top: 19px;
-    color: #8e8e8e;
     background-color: white;
-}
-nav div{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 100%;
     cursor: pointer;
-}
-nav{
-    border-top: solid 1px #dbdbdb;
-}
-.active{
-    border-top: solid #262626ff 2px;
+    
+    
 }
 .projet{
-    display: flex;
-    position: relative;
-    max-width: 936px;
-    width: 100%;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.projet img{
-    max-width: 294px;
-    max-height: 293px;
-    cursor: pointer;
-    margin-top: 20px;
-}
-.detail{
-    max-width: 1334px;
-    max-height: 887px;
-    width: 100%;
+    border: solid white 1px;
     height: 100%;
-    position: fixed;
-    visibility: hidden;
-    border-radius: 10px;
-    top: 24px;
+    width: 80%;
+    margin-left:150px;
+    background-color: rgb(255, 255, 255, 0.1);
 }
-.portFolio{
-    position: fixed;
-    max-width: 100vw;
-    max-height: 100vh;
-    visibility: hidden;
-    display: flex;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.activeJava1{
+    box-shadow: 5px 5px 100px red;
 
 }
-.projet img:hover{
-    filter: brightness(50%);
-    border: none;
-    transition: 0.1s;
-}
-.detail img{
-    max-height: 100%;
-    max-width: 100%;
-    border-radius: 10px;
-}
-.scrollBar{
-    position: relative;
-    margin-right: 100px;
-    height: 100vh;
-    max-width: 334px;
-    width: 100%;
-    display: flex;
-    border-right: #dbdbdb 1px solid;
-    flex-direction: column;
+.activeJava2{
+    box-shadow: 5px 5px 100px blue;
     
-}
-.scrollBar button{
-    background-color: white;
-}
-#Menu{
-    margin-top: 116px;
 }
 
-.scrollBar div{
-    margin-bottom: 45px;
-    display: flex;
-    position: fixed;
-    
-
+.image{
+    margin: 50px
 }
-
-#Mes-projets{
-    margin-top: 160px;
-    
-}
-#Contact{
-    margin-top: 200px;
-}
-#Contact button{
-    background-color: #1b66c9;
-    height: 40px;
-    padding-top: 10px;
-    padding-left: 10px;
-    width: 80px;
-    color: white;
-    text-align: center;
-    transition: 0.2s;
-    
-}
-#Contact i{
-    margin-top: 10px;
-}
-hr{
-    width: 60px;
-    position: fixed;
-    margin-top: 30px;
-    visibility: hidden;
-    left: 0px;
-}
-.souligner{
-    transition: 0.2s;
-    transform: translate(200%);
-}
-#Contact button:hover{
-    background-color: white;
-    padding: 10px;
-    width: 80px;
-    color: black;
-    text-align: center;
-}
-.scrollBar button{
-    font-size: 16px;
-    color: #262626;
-    font-weight: 100;
-    width: 100%;
-    display: flex;
-    margin-top: 0;
-}
-h1{
-    position: fixed;
-    font-weight: 100;
-    font-size: 16pt;
-    top: 38px;
-    display: flex;
-    position: fixed;
-    font-style: normal ;
-}
-.infobutton{
-    z-index: 2;
+.java2{
     position: absolute;
-    top: 50%;
-    left: 47%;
-    display: flex;
-    transition: 0.2s;
-    transform: translateY(-50%);
-    flex-direction: column;
-    visibility: hidden;
-}
-.infovisible{
-    transform: translateY(5%);
-    transition: 0.1s;
-    visibility: visible;
-}
-.infobutton button{
-    padding:5px;
+    margin-left:100px;
+    top: 12%;
+    left: 0;
+    scale: 20%;
 }
 
-#buttonGit{
-    background-color: #131035;
-    border-radius: 100px;
-    color: #ffffff;
-}
-#buttonDownload{
-    background-color: green;
-    border-radius: 100px;
-    color: #ffffff;
-}
-.icofont-brand-java{
-    color: #006bb9;
-}
-#java button{
-    color: #e80000;
-}
-.icofont-file-html5{
-    color: #dd4b25;
-}
 
-.icofont-file-css{
-    color: #254bdd;
-}
-
-.icofont-file-javascript{
-    color: #f7df1e;
-}
-#C button{
-    color: #36028a;
-}
-.icofont-file-python{
-    color: #3c75ab;
-}
-#Python button{
-    color:#f2d159;
-}

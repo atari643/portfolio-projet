@@ -13,8 +13,7 @@ var ligne = document.querySelector("hr")
 var boutonGithub = document.getElementById("buttonGit")
 var lienGithub = document.querySelector(".Git")
 var infobutton = document.querySelector(".infobutton")
-
-
+var countJava = 0;
 
 
 
@@ -24,20 +23,20 @@ function desactiver(){
     } 
     
 }
-portFolio.addEventListener("click", ()=>{
-    detail.style.visibility = "hidden"
-    portFolio.style.visibility = "hidden"
-})
 
 
 buttonJava.addEventListener("click", desactiver)
 buttonJava.addEventListener("click", ()=>{
-    buttonJava.classList.add("active")
+    countJava+=1;
+    if(countJava==1){
+    projet.classList.toggle("activeJava1")
+    setInterval(()=>{
+        projet.classList.toggle("activeJava2")
+    }, 1000)
+    }
     projet.innerHTML = "<img class='image' src='./images/odomo.png' alt='odomo'>"
-    
     var odomo = document.querySelectorAll(".image")
     for(var i = 0; i < odomo.length; i++){
-
     odomo[i].addEventListener("click", ()=>{
         detail.innerHTML = "<img src='./images/projet-odomo.png' alt='projet-odomo'>"
         detail.style.visibility = "visible"
