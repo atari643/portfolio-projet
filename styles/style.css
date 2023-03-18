@@ -5,6 +5,29 @@
     scroll-behavior: smooth;
     
 }
+.etoile{
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+}
+.Top{
+    top:5%;
+    left: 5%;
+}
+.Right{
+    top:5%;
+    right: 5%;
+}
+.Bottom{
+    top: 90%;
+    right: 5%;
+}
+.Left{
+    bottom: 9.5%;
+    left: 5%;
+}
 body{
     background-color: black;
     height: 100vh;
@@ -14,15 +37,18 @@ body{
     
 }
 .page{
-    max-width: 80%;
+    max-width: 90%;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     
 }
 header{
     display: flex;
-    height: 200px;
+    height: 98vh;
     justify-content: center;
-    margin-top: 100px;
+    align-items: center;
     justify-content: space-around;
 }
 #Description{
@@ -32,15 +58,30 @@ header{
 
 }
 #profil img{
-    border-radius: 100px;
+    border-radius: 300px;
+    width : 85%;
+    height : 50%;
 }
+#profil{
+    width: 40%;
+}
+
+@media screen and (min-width: 1665px){
+    footer{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+    footer button{
+        width: 70px;
+        height: 70px;
+    }
+
 nav{
     display: flex;
-    width: 100%;
+    width: 80%;
     height: 5%;
     justify-content: center;
-    
-    
 }
 nav button{
     background-color: white;
@@ -49,29 +90,100 @@ nav button{
     width: 100%;
     padding-left: 50px;
     padding-right: 50px;
-    height: 100%;
-    cursor: pointer;
+    height: var(--h);
+    cursor: pointer;  
     
-    
+}
+:root{
+    --h:100%
+}
+.up{
+    transition: 1.5s;
+    transform: translateY(-40px);
 }
 .projet{
     border: solid white 1px;
     height: 100%;
     width: 80%;
-    margin-left:150px;
-    background-color: rgb(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
 }
-.activeJava1{
-    box-shadow: 5px 5px 100px red;
+}
+@media screen and (max-width: 1665px){
+    footer{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    footer button{
+        width: 70px;
+        height: 70px;
+    }
+    nav{
+        display: flex;
+        width: 10%;
+        height: 5%;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 150px;
 
-}
-.activeJava2{
-    box-shadow: 5px 5px 100px blue;
+    }
+    nav button{
+        background-color: white;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        width: 100%;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        height: 100%;
+        cursor: pointer;
+        
+        
+    }
+    .projet{
+        border: solid white 1px;
+        height: 100%;
+        width: 80%;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    }
+@keyframes ledJ {
+    0%{box-shadow: 5px 5px 100px red;}
+    50%{box-shadow: 5px 5px 100px blue;}
+    100%{box-shadow: 5px 5px 100px red;}
     
 }
-
+@keyframes ledC {
+    0%{box-shadow: 5px 5px 100px rgb(119,119,248);}
+    50%{box-shadow: 5px 5px 100px rgb(57,0,148);}
+    100%{box-shadow: 5px 5px 100px rgb(119,119,248);}
+    
+}
+@keyframes ledPy {
+    0%{box-shadow: 5px 5px 100px rgb(0,153,242);}
+    50%{box-shadow: 5px 5px 100px rgb(242,193,8);}
+    100%{box-shadow: 5px 5px 100px rgb(0,153,242);}
+    
+}
+.colorJava{
+    animation-name: ledJ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.colorC{
+    animation-name: ledC;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.colorPy{
+    animation-name: ledPy;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
 .image{
-    margin: 50px
+    margin: 50px;
+    width: 65%;
 }
 .java2{
     position: absolute;
@@ -81,4 +193,59 @@ nav button{
     scale: 20%;
 }
 
+.projet ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.projet div{
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+    
+}
+.icofont-close{
+    position: absolute;
+    cursor: pointer;
+    top: 7%;
+    right: 7%;
+}
+.icofont-expand{
+    position: absolute;
+    top: 7%;
+    right: 12%;
+    cursor: pointer;
+}
 
+.projet li{
+    border: solid 1px black;
+    width: 90%;
+    height: 90%;
+    border-top: 30px solid rgba(255, 255, 255, 0.1);
+
+}
+
+.logo{
+    width: 10%;
+    position: absolute;
+    margin-top: 40px;
+    transition: 2s;
+    transform: translateY(-5px);
+}
+
+.move {
+    transition: 2s;
+    transform: translateY(+5px);
+}
+.image:hover{
+    filter: brightness(70%);
+    cursor: pointer;
+}
+
+.icofont-ui-email{
+    width: 100%;
+    height: 100%;
+}
