@@ -98,7 +98,7 @@ nav button{
     --h:100%
 }
 .up{
-    transition: 1.5s;
+    transition: 0.5s;
     transform: translateY(-40px);
 }
 .projet{
@@ -192,7 +192,9 @@ nav button{
     left: 0;
     scale: 20%;
 }
-
+#odomo{
+    filter: brightness(100%);
+}
 .projet ul{
     list-style: none;
     display: flex;
@@ -248,4 +250,17 @@ nav button{
 .icofont-ui-email{
     width: 100%;
     height: 100%;
+}
+#odomo{
+    display: flex;
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.afficher{
+    visibility: visible !important;
+}
+.cacher{
+    visibility: hidden;
 }
