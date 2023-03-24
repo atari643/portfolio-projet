@@ -7,17 +7,16 @@ var buttonMDP = document.getElementById("MDP")
 var buttonBD = document.getElementById("BD")
 var allbutton = document.querySelectorAll("nav div")
 var listprojet = document.querySelector(".projet")
-var detail = document.querySelector(".detail")
+var Portfolio = document.querySelector(".portFolio")
 var contact = document.getElementById("Contact")
 var sphere = document.querySelector(".sphere")
-var all = document.querySelector("body:not(#odomo)")
+var all = document.querySelector(".page")
+
 class ProjetJava extends React.Component {
     render() {
         const items = [
-            <div><img id='odomo' className = 'cacher' src="./images/projet-odomo.png"></img><img class='image' src='./images/odomo.png' alt='odomo' /></div>,
-            <img class='image' src='./images/tableBiosphère.png' alt='Biosphère' />,
-            <img class='image' src='./images/odomo.png' alt='autre' />,
-            <img class='image' src='./images/odomo.png' alt='autre2' />
+            <img class='image odomo' src='./images/odomo.png' alt='odomo' />,
+            <img class='image biosphère' src='./images/tableBiosphère.png' alt='Biosphère' />,
         ]
 
         const java = <img class='logo' src='./images/javalogo.png' alt='javalogo'></img>
@@ -25,6 +24,18 @@ class ProjetJava extends React.Component {
         return <ul>
             {lis}
         </ul>
+    }
+}
+class RetextJava extends React.Component{
+    render(){
+        const items = [
+            <img id='retexOdomo' src='./images/projet-odomo.png' alt='projet'></img>
+        ]
+        const close = <div class="cercle close"><i class="icofont-close-circled icofont-5x"></i></div>
+        const lis = items.map(item => <React.Fragment>{item}{close}</React.Fragment>)
+        return <div class='detail'>
+            {lis}
+        </div>
     }
 }
 class ProjetC extends React.Component {
@@ -99,12 +110,34 @@ buttonJava.addEventListener("click", () => {
             logo[i].classList.toggle("move")
         }
     }, 2000)
-    var odomo = document.querySelector("#odomo~.image")
-    var odomoProjet = document.querySelector("#odomo")
-    odomo.addEventListener("click", ()=>{
-        odomoProjet.classList.toggle('afficher')
-        all.style.filter="brightness(50%)"
+    var odomo = document.querySelector(".odomo")
+    var open = document.querySelectorAll(".icofont-expand")
+    open.forEach((userItem) => {
+    userItem.addEventListener("click",()=>{
+        userItem.parentElement.style.position="fixed"
+        userItem.parentElement.style.width = "75%"
+        userItem.parentElement.style.border = "solid red"
+        userItem.parentElement.style.top = "0"
+        userItem.parentElement.style.zIndex = "2"
+        userItem.parentElement.style.backgroundColor = "black"
     })
+})
+    odomo.addEventListener("click", ()=>{
+        ReactDOM.render(<RetextJava />, Portfolio)
+        var odomoProjet = document.querySelector("#retexOdomo")
+        all.style.filter="brightness(50%)"
+        odomoProjet.style.filter="brightness(100%)"
+        odomoProjet.style.display="block"
+        document.querySelector(".cercle").style.display="block"
+        document.querySelector(".cercle").addEventListener("click", ()=>{
+            odomoProjet.style.display="none"
+            all.style.filter="brightness(100%)"
+            document.querySelector(".cercle").style.display="none"
+        })
+        
+    })
+    
+
     }
 )
 buttonC.addEventListener("click", desactiver)
