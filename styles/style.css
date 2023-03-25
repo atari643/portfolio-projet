@@ -12,6 +12,7 @@
     border-radius: 10px;
     position: absolute;
 }
+
 .Top{
     top:5%;
     left: 5%;
@@ -46,24 +47,22 @@ body{
 }
 header{
     display: flex;
-    height: 98vh;
+    height: 80vh;
+    position: relative;
     justify-content: center;
     align-items: center;
     justify-content: space-around;
 }
-#Description{
-    width: 40%;
-    font-size: 20pt;
-    color: white;
 
-}
 #profil img{
     border-radius: 300px;
-    width : 85%;
+    width : 50%;
     height : 50%;
 }
 #profil{
-    width: 40%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
 }
 
 @media screen and (min-width: 1665px){
@@ -99,7 +98,7 @@ nav button{
 }
 .up{
     transition: 0.5s;
-    transform: translateY(-40px);
+    transform: translateY(-0px);
 }
 .projet{
     border: solid white 1px;
@@ -153,7 +152,7 @@ nav button{
         height: 5%;
         justify-content: center;
         flex-direction: column;
-        margin-top: 150px;
+        margin-top: 180px;
 
     }
     nav button{
@@ -244,8 +243,8 @@ nav button{
 }
 .icofont-expand{
     position: absolute;
-    top: 7%;
-    right: 12%;
+    top: 5%;
+    right: 6%;
     cursor: pointer;
 }
 
@@ -269,13 +268,105 @@ nav button{
     transition: 2s;
     transform: translateY(+5px);
 }
-.image:hover{
-    filter: brightness(70%);
-    cursor: pointer;
-}
+
 
 .icofont-ui-email{
     width: 100%;
     height: 100%;
 }
 
+.window{
+    background-color: #1a1a1a;
+    position: fixed;
+    top: 1%;
+    width: 90vw;
+    height: 95vh;
+    border-top: 10px;
+    border-top: #313131 solid 50px;
+}
+
+.cacher{
+    visibility: hidden;
+}
+.contenu .big{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 60%;
+    
+}
+.contenu h1{
+    position: absolute;
+    color: white;
+    width: 50%;
+    height: 8%;
+    left: 10%;
+    top: 5%;
+    border-bottom: solid white 10px;
+}
+#afficher{
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    font-size: 20pt;
+    border-top: 1px white solid;
+}
+#Description{
+    width: 40%;
+    margin-top: 10px;
+    font-size: 14pt;
+    color: white;
+
+}
+
+#me{
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    visibility: hidden;
+    
+}
+.down{
+    transform: translateY(+30px);
+    visibility: visible !important;
+    transition: 0.1s;
+}
+#Presentation{
+    color: white;
+    margin-left: 4%;
+    margin-bottom: 10%;
+}
+.Download{
+    color: white;
+    cursor: pointer;
+    background-color: #1a1a1a;
+    width: 10%;
+    height: 7%;
+    position: absolute;
+    border-radius: 15%;
+    top: 70%;
+    right: 10%;
+    border-left: solid #545454;
+    border-top: solid #545454;
+}
+
+.contenu p{
+    position: absolute;
+    color: white;
+    width: 25%;
+    top: 20%;
+    text-align: justify;
+    right: 5%;
+    border-top: 10px solid white;
+    padding-left: 60px;
+    padding-top: 30px;
+}
+.icofont-close-line-circled{
+    position: absolute;
+    right: 4%;
+    top: 2%;
+    color: white;
+    cursor: pointer;
+}
